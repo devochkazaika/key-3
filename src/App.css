@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+.animated {
+  transition-property: background-color;
+  transition-duration: 3s;
+}
 
 .App-logo {
   height: 40vmin;

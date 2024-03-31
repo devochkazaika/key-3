@@ -1,0 +1,10 @@
+.wrapper {
+    transition: margin .5s;
+    margin: 0 0 0 -20px;
+    width: 100px;
+}
+
+.wrapper.is-nav-open {
+    margin: 0 0 0 200px;
+    color: "green"
+}

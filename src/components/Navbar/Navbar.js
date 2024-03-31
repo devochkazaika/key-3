@@ -1,15 +1,14 @@
 
 import { React } from "react";
-import { NavMenu } from "./NavMenu";
-import { NavLink } from "./NavLink";
+import { Menu, Link } from "./NavbarElements"
 // import { Nav, NavLink, NavMenu } from "./NavbarElements";
 
 const Navbar = () => {
     return (
-
-        <NavMenu>
-            <NavLink to="/about" name="About"/>
-        </NavMenu>
+        <Menu>
+            <Link to="/about" name="About"/>
+            <Link to="/" name="Home"/>
+        </Menu>
     );
 };
 

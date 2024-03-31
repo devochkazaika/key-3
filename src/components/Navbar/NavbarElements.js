@@ -1,55 +1,24 @@
-import { NavLink as Link} from "react-router-dom";
+import { NavLink } from "./NavLink";
+import { NavMenu } from "./NavMenu";
 import styled from "styled-components";
 
-
-export const Nav = styled.nav`
-    flex-direction: row-reverse;
-    background: black;
-    height: 85px;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 0.2rem calc((100vw - 1000px) / 2);
-    padding-right: 3%;
-    z-index: 12;
-`;
- 
-export const NavLink = styled(Link)`
-    color: white;
+export const Link = styled(NavLink)`
+    color: white; /* Установка белого цвета для ссылок */
     display: flex;
     align-items: center;
-    text-decoration: none;
+    text-decoration: white;
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-    &.active {
-        color: #4d4dff;
+    &.a {
+        color: white;
     }
 `;
  
-// export const Bars = styled(FaBars)`
-//     display: none;
-//     color: #808080;
-//     @media screen and (max-width: 768px) {
-//         display: block;
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         transform: translate(-100%, 75%);
-//         font-size: 1.8rem;
-//         cursor: pointer;
-//     }
-// `;
- 
-export const NavMenu = styled.div`
+export const Menu = styled(NavMenu)`
     display: flex;
-    align-items: center;
-    margin-right: -24px;
-    /* Second Nav */
-    /* margin-right: 24px; */
-    /* Third Nav */
-    /* width: 100vw;
-white-space: nowrap; */
-    @media screen and (max-width: 768px) {
+    align-items: right;
+    @media screen and (max-width: 100px) {
         display: none;
     }
 `;
